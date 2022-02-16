@@ -1,0 +1,15 @@
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+
+/random/setSeeds 1234515 9816459
+#/run/numberOfThreads 40
+
+/lumi/det/setGDML geometry/lumi_crex_simple.gdml
+/run/initialize
+/lumi/gun/beamtype 1
+/lumi/gun/rasterwidth 0.4
+/lumi/gun/rasterheight 0.4
+/gun/energy 2.2 GeV
+
+/run/beamOn 100
